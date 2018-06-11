@@ -1,0 +1,8 @@
+pyspark --packages com.databricks:spark-csv_2.10:1.4.0
+from pyspark.sql import SQLContext
+sqlContext = SQLContext(sc)
+descdf = sqlContext.read.format('com.databricks.spark.csv').options(header='true', inferschema='true').load('file:///home/cloudera/Desktop/test.csv')
+def similar(a, b):
+	return SequenceMatcher(None, a, b).ratio()
+from difflib import SequenceMatcher
+descdf.map(lambda row:(row[0],row[1],row[2],similar(row[1],row[2]))).toDF(["test_id","description_x","description_y","similarity"]).show()

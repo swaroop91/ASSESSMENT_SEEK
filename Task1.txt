@@ -1,0 +1,10 @@
+def int_list(colVals):   #list is passed to the function
+	arr=[]
+	for n in range(len(colVals)):
+		array_a=[]
+		global array_a
+		array_a[0:len(colVals)] = colVals
+		del array_a[n]
+		arr.append(sum(array_a))
+	return arr
+int_list([1,2,3,4]) 

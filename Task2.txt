@@ -1,0 +1,29 @@
+import pandsd as pd
+import numpy as np
+#Downloading data set
+from urllib import request
+url = 'https://www.kaggle.com/crawford/weekly-sales-transactions/downloads/Sales_Transactions_Dataset_Weekly.csv/1'
+def download_data(csv_url):
+	response = request.urlopen(csv_url)
+	csv = response.read()
+	csv_str = str(csv)
+	lines = csv_str.split("\\n")
+	dest_url = r'F:\data_job_post.csv'
+	fx = open(dest_url, "w")
+	for line in lines:
+		fx.write(line + "\n")
+	fx.close()
+download_data(url)
+
+salesdf = pd.read_csv("F:/swaroop/Sales_Transactions_Dataset_Weekly.csv")
+
+#finding mean , median
+np.median(df[df.columns[1:53]],axis=0)
+np.mean(df[df.columns[1:53]],axis=0)
+
+e. salesdfSubset=salesdf[salesdf.columns[1:53]]
+for n in range(51):
+	n=n+1
+	colDF=salesdfSubset[salesdfSubset.columns[n]]
+	outliers = colDF[colDF > colDF.mean() + 3 * colDF.std()]
+	outliers
