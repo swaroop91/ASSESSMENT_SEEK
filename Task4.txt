@@ -1,3 +1,10 @@
+Q4. String similarity (code in python):
+a) Download test.csv from https://www.kaggle.com/rishisankineni/text-similarity/data
+b) Load the data to a Spark/Pandas data frame
+c) Calculate similarity between description_x and description_y and store resultant
+scores in a new column
+d) Parallelise the matching process using SPARK environment.
+
 pyspark --packages com.databricks:spark-csv_2.10:1.4.0
 from pyspark.sql import SQLContext
 sqlContext = SQLContext(sc)
