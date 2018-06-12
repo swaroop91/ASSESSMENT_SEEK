@@ -1,3 +1,12 @@
+Q2. Sales Data Exploration and Analysis (code in python)
+a) Write code to download the following Kaggle dataset:
+Weekly Sales Transaction Data: https://www.kaggle.com/crawford/weekly-sales-transactions
+b) Find median, mean, min and max values for each product
+c) Identify the best performing product (based on volume)
+d) Identify the most promising product (emerging product)
+e) Identify the top 5 worst performing products on a biweekly basis
+f) Identify outliers from the data and output the corresponding week numbers
+
 a.
 from urllib import request
 url = 'https://www.kaggle.com/crawford/weekly-sales-transactions/downloads/Sales_Transactions_Dataset_Weekly.csv/1'
