@@ -1,3 +1,25 @@
+Q3. Jobposts Data Exploration and Analysis (code in python)
+a) Reuse code from Q2 to download the following Kaggle dataset:
+Jobposts Data: https://www.kaggle.com/madhab/jobposts/
+b) Extract the following fields from the jobpost column:
+1. Job Title
+2. Position Duration
+3. Position Location
+4. Job Description
+5. Job Responsibilities
+6. Required Qualifications
+7. Remuneration
+8. Application Deadline
+9. About Company
+c) Identify the company with the most number of job ads in the past 2 years
+d) Identify the month with the largest number of job ads over the years
+e) Clean text and generate new text from Job Responsibilities column: The new text shall not contain any stop words, and the plural words shall be converted into singular words.
+f) Write functions to identify null/NA values and to replace null/NA values with a custom message in “Duration” column
+g) Store the results in a new Dataframe/SQL table(s)
+h) Write the results to an S3 bucket
+
+
+
 from urllib import request
 url = 'https://www.kaggle.com/madhab/jobposts/downloads/data%20job%20posts.csv/1'
 def download_data(csv_url):
