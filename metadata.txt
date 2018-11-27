@@ -1,0 +1,35 @@
+application_External_Unique_ID	String	36	Y	Y								application-id
+CHANNELCODE	String	50	Y	Y								channel-transaction-id
+Initiated_Date	Date	35	Y	N								initiated-date
+initiated_by	String	50	Y	N								initiated-by
+SourceInstance	String	50	Y	N								source-instance
+Source	String	50	Y	N								source
+SourceType	String	50	Y	N								source-type
+assign_to	String	30	Y	N								assign-to
+select-team-to-assign	String	50	Y	N								select-team-to-assign
+Owner_Id	String	50	Y	Y								owner-id
+Application_Disposition_Status	String	50	Y	N	DISPOSITION_STATUS	LMS_DIALER_DISPOSITIONS						application-disposition-status
+Reason_Won_Lost	String	50	Y	N	REASON	LMS_DIALER_DISPOSITIONS			DISPOSITION_STATUS|REASON	LMS_DIALER_DISPOSITIONS	application-disposition-status	reason
+Title	String	4	Y	Y								title
+Customer_Name	String	110	Y	N								full-name
+First Name	String	50	Y	N								first-name
+middle_name	String	50	Y	Y								middle-name
+last_name	String	50	Y	Y								last-name
+Gender	String	10	Y	Y								gender
+Date of birth	Date	35	Y	Y								date-of-birth
+mobile-number-country-code	CountryCode	5	Y	N								mobile-number-country-code
+Mobile	Long	15	Y	N								mobile-number
+email ID	String	150	Y	Y								email-id
+house-no-country-code	CountryCode	5	Y	Y								house-no-country-code
+House Number	Long	15	Y	Y								house-no
+office-no-country-code	CountryCode	5	Y	Y								office-no-country-code
+Office no	Long	15	Y	Y								office-no
+Unique ID 1	String	30	Y	Y								unique-id-1
+Unique ID 2	String	30	Y	Y								unique-id-2
+Product_Category_1	String	30	Y	N	PRODUCT_CATEGORY_VALUE	PRODUCT_CATEGORY	PRODUCT_CATEGORY_VALUE|PRODUCT_CATEGORY_CODE	PRODUCT_CATEGORY				product-category-1
+Product_Type_1	String	30	Y	N	PRODUCT_TYPE_VALUE	PROD_TYPE	PRODUCT_TYPE_VALUE|PRODUCT_TYPE_CODE	PROD_TYPE				product-type-1
+Currency_1	String	30	Y	Y								currency-code-1
+Promo_ID_1	String	15	Y	Y								promo-id-1
+Amount_1	String	15	Y	Y								amount-1
+Additional_Information_1	String	255	Y	Y								additional-information-1
+Additional_Information_3	String	255	Y	Y								additional-information-3
